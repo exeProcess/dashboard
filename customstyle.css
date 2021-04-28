@@ -2,24 +2,27 @@
 
 
 body{
-    height: 100vh;
     overflow-y: hidden;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
+.home{
+  background-color: #256363;
+}
 .side-bar {
     background-color: #32BDA6;
-    height: 110vh;
+    height: 120vh;
     float: left; 
 }
 .right-side{
-  height: auto;
-  overflow-y: scroll;
+  height: calc(100vh - 30px);
+  overflow-y: auto;
   overflow-x: hidden;
 }
 .panel-design{
   background-color: #1E436B;
   width:9px;
+  height: 100%;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -41,16 +44,7 @@ body{
 .avatar{
     width:150px;
     height: 150px;
+    position: relative;
 }
-@media only screen and (max-width: 600px) {
-    .avatar {
-        width: 60px !important;
-        height: 60px !important;
-        margin-left: 5px !important;
-    }
-    .label{
-        font-size: 1rem;
-        margin-left: 0px;
-    }
-}
+
 
