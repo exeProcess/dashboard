@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
 body{
     overflow-y: hidden;
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+}
+.date{
+  font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width: 600px) {
+  li h6,.responde{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 601px) {
+  li h6,.responde{
+    font-size: 13px;
+  }
 }
 .home{
   background-color: #256363;
@@ -15,7 +28,7 @@ body{
     float: left; 
 }
 .right-side{
-  height: calc(100vh - 30px);
+  height: calc(100vh - 3px);
   overflow-y: auto;
   overflow-x: hidden;
 }
