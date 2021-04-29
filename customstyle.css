@@ -21,10 +21,19 @@ body{
   li h6,.responde{
     font-size: 12px;
   }
+  .calendar-title{
+    margin-top: 200px;
+  }
 }
 @media screen and (min-width: 601px) {
   li h6,.responde{
     font-size: 15px;
+  }
+  .calendar-title{
+    margin-top: 12rem;
+  }
+  .calendar-panel{
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -49,6 +58,10 @@ body{
   background-color: #39597C;
   height: 120vh;
   float: left;
+}
+.right{
+  background: #E5E5E5;
+  height: auto;
 }
 .right-side{
   height: calc(100vh - 3px);
