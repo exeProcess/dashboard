@@ -5,46 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Ahome">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aassignment">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%3Acampaign">
     <link rel="stylesheet" href="customstyle.css">
     <link rel="stylesheet" href="calender/app.css">
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
-        body{
-            overflow: scroll;
-            overflow-x: hidden;
-        }
+         body{
+             overflow-y: auto;
+             padding: 0;
+             scroll-behavior: smooth;
+         }
     </style>
 </head>
 <body>
-    <div class="container-fluid row">
-        <div class="col-9 pt-3 d-inline-block border right">
+    <div class="row px-o" style="height: auto;">
+        <div class="col-12 col-lg-8 pt-3 d-inline-block bg-light">
             <div class="row d-flex mx-auto col-12 p-0" style="height: 45px;">
                 <div class="col-7 col-lg-7 col-md-6 py-2">
-                    <h5 class="font-weight-bold page-title">Student Dashboard</h5>
+                    <h5 class="font-weight-bold page-title" style="font-size: 21px;">Student Dashboard</h5>
                 </div>
                 <div class="col-5 col-lg-5 col-md-6 px-0">
-                    <div class="col-12 col-md-7 pl-md-4 pl-sm-4 pl-lg-4 pl-4 d-flex justify-content-center col-lg-4 float-right py-1" style="height: 100%;">
-                        <span class="rounded-circle home text-white ml-4 d-flex justify-content-center align-items-center p-1" style="width:30px;height:30px;">
-                            <ion-icon name="home-outline"></ion-icon>
+                    <div class="col-12 col-md-7 pl-md-2 pl-lg-2 pl-2 d-flex justify-content-center col-lg-4 float-right py-1" style="height: 100%;">
+                        <span class="rounded-circle home ml-4 d-flex justify-content-center align-items-center p-1" style="width:30px;height:30px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="16" height="16"
+                                viewBox="0 0 172 172"
+                                style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#256363"></path><g fill="#ffffff"><path d="M86,14.19336l-78.90332,73.23438l7.30665,7.89453l7.09668,-6.59278v61.77051h53.75v-53.75h21.5v53.75h53.75v-61.77051l7.09668,6.59278l7.30665,-7.89453zM86,28.80665l53.75,49.9707v60.97266h-32.25v-53.75h-43v53.75h-32.25v-60.97266z"></path></g></g></g></svg>
                         </span>
                         <span class="rounded-circle home text-white ml-2 d-flex justify-content-center align-items-center p-1" style="width:30px;height:30px;">
-                            <ion-icon name="exit-outline"></ion-icon>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="16" height="16"
+                                viewBox="0 0 172 172"
+                                style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#256363"></path><g fill="#ffffff"><path d="M43,21.5c-11.78928,0 -21.5,9.71072 -21.5,21.5v86c0,11.78928 9.71072,21.5 21.5,21.5h60.91667c9.94739,0 18.80196,-6.51986 21.27604,-16.132c0.98565,-3.83435 -1.32369,-7.74173 -5.15804,-8.72738c-3.83435,-0.98565 -7.74173,1.32369 -8.72738,5.15804c-0.70792,2.75036 -3.97935,5.368 -7.39062,5.368h-60.91667c-4.04189,0 -7.16667,-3.12478 -7.16667,-7.16667v-86c0,-4.04189 3.12478,-7.16667 7.16667,-7.16667h60.91667c3.41127,0 6.68271,2.61764 7.39063,5.368c0.98565,3.83435 4.89302,6.14369 8.72738,5.15804c3.83435,-0.98565 6.14369,-4.89302 5.15804,-8.72738c-2.47408,-9.61214 -11.32865,-16.132 -21.27604,-16.132zM121.75635,57.26335c-2.91501,0.00361 -5.53745,1.7723 -6.63303,4.47359c-1.09558,2.70129 -0.44601,5.79702 1.64296,7.83012l9.26627,9.26628h-65.11589c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h65.11589l-9.26627,9.26628c-1.87223,1.79752 -2.62641,4.46675 -1.97168,6.97825c0.65472,2.5115 2.61605,4.47282 5.12755,5.12755c2.5115,0.65472 5.18073,-0.09946 6.97825,-1.97168l21.5,-21.5c2.79764,-2.7988 2.79764,-7.33531 0,-10.13411l-21.5,-21.5c-1.35097,-1.38873 -3.2066,-2.17137 -5.14404,-2.1696z"></path></g><path d="" fill="none"></path></g></g></svg>
                         </span>
                     </div>
                 </div>
             </div>
-            <div class="col-12 row mx-auto px-3 " style="height: auto;">
-                <div style="background-color: #EBECEB;" class="col-12 row panel rounded border-md-right border-lg-right d-flex mx-auto mx-md-0 mx-lg-0 col-lg-5 col-md-6 p-0">
+            <!--section1-->
+            <div class="col-12 row p-4 mx-3" style="height: auto;">
+                <div style="background-color: #EBECEB;" class="col-12 col-md-6 col-lg-6 mt-lg-2 mt-md-2 mt-3 row panel rounded">
                     <div class="col-3 col-lg-2 col-md-3 px-1 py-1">
                         <span class="rounded-circle home mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:60px;height:60px;">
-                            
+                            <img src="194938.png" alt="" style="width: 60px;height: 60px;">
                         </span>
                     </div>
                     <div class="col-7 col-md-6 ml-md-2 ml-lg-4 px-0 py-2">
-                        <h6 class="font-weight-bold page-title" style="font-size:12px;">Akinsola Ibraheem</h6>
-                        <p class="mt-3 font-weight-normal" style="font-size: 13px;">Student ID:234</p>
+                        <h6 class="font-weight-bold page-title" style="font-size:13px;">Akinsola Ibraheem</h6>
+                        <h6 class="mt-3 font-weight-bold" style="font-size: 12px;">Student ID:234</h6>
                     </div>
                     <div class="col-2 py-2 col-md-2">
                         <h6 class="page-title font-weight-bold mr-md-2" style="margin-right: 3px;font-size:12px">SS</h6>
@@ -52,7 +64,7 @@
                     </div>
                 </div>
 
-                <div style="background-color: #EBECEB;" class="col-12 mt-2 panel mt-lg-0 mt-md-0 row rounded d-flex mx-auto mx-md-0 mx-lg-0 col-lg-7 col-md-6 p-0">
+                <div style="background-color: #EBECEB;" class="col-12 col-lg-6 col-md-6 ml-md-4 mr-4 mr-lg-0 mr-md-0 ml-lg-4 panel mt-lg-2 mt-md-2 mt-3 mt-lg-0 mt-md-0 row rounded d-flex">
                     <div class="col-4 text-center px-1 py-1">
                         <h6 class="page-title font-weight-bold" style="font-size: 12px;">Subjects</h6>
                         <h6 class="mt-3 font-weight-normal">9</h6>
@@ -66,162 +78,551 @@
                         <h6 class="mt-3 font-weight-normal">3</h6>
                     </div>
                 </div>
-
-                <div class="col-12 mx-auto row p-4 border">
-                    <div class="col-12 px-0" style="height: 20px;">
-                        <h6 class="page-title my-auto font-weight-bold" style="font-size: 15px;">My Subjects</h6>
-                    </div>
-                    <div class="col-12 px-0">
-                        <button style="background-color: #D9E3D2; width: 100%;height: 30px;" class="btn col-12 border-0 rounded panel mx-auto d-inline-block" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <ion-icon name="caret-down-outline" style="color: #9E9C9C;font-size: 1rem;"></ion-icon>
-                            <span class="rounded-circle bg-white border text-muted font-weight-bold float-right my-auto text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;margin-right: 0;">
-                                12
+            </div>
+            <!--end-->
+            <!--section2-->
+            <div class="col-12 px-3" style="height: auto;">
+                <button style="background-color: #D1EAC1; width: 100%;height: 36px;" class="btn rounded panel mx-auto d-flex justify-content-between" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <h6 class="page-title my-auto font-weight-bold" style="font-size: 15px;">My Subjects</h6>
+                    <ion-icon name="caret-down-outline" style="color: #9E9C9C;font-size: 1rem;"></ion-icon>
+                    <span class="rounded-circle bg-white border text-muted font-weight-bold float-right my-auto text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;margin-right: 0;">
+                        12
+                    </span>
+                </button>
+                <div class="dropdown-menu p-3 border-0 panel mx-auto" style="height: auto;width: 96%;" aria-labelledby="dropdownMenuButton">
+                    <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Mathematics</span>
+                    <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Physics</span>
+                    <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Biology</span>
+                    <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Chemistry</span>
+                    <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">English</span>
+                    <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Geography</span>
+                </div>
+            </div>
+            <!--end-->
+            <!--section3-->
+            <div class="col-10 p-2 mt-3 row mx-auto" style="height:auto;">
+                <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
+                    <div class="col-12 row rounded p-0" style="height: 100%;background-color: #F66462">
+                        <div class="col-9">
+                            <div class="col-12 p-4 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="96" height="96"
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#f66462"></path><g fill="#ffffff"><path d="M86,0.32544c-5.54297,0 -11.08594,1.72168 -15.81006,5.15454l-7.23316,5.27002h-38.76929c-4.44067,0 -8.0625,3.62183 -8.0625,8.0625v139.75c0,4.44067 3.62183,8.0625 8.0625,8.0625h123.625c4.44067,0 8.0625,-3.62183 8.0625,-8.0625v-139.75c0,-4.44067 -3.62183,-8.0625 -8.0625,-8.0625h-38.76929l-7.24365,-5.27002c-4.72412,-3.43286 -10.26709,-5.15454 -15.79956,-5.15454zM86,5.71094c4.43018,0 8.86035,1.37524 12.63965,4.11523l10.91797,7.93652c2.07861,1.51172 3.31738,3.95776 3.31738,6.52979v5.27002c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-48.375c-1.48022,0 -2.6875,-1.20728 -2.6875,-2.6875v-5.27002c0,-2.57202 1.23877,-5.01807 3.31738,-6.52979l10.91797,-7.93652c3.7793,-2.73999 8.20947,-4.11523 12.63965,-4.11523zM86,10.75c-2.59302,0 -4.76611,1.84766 -5.25952,4.2937c-0.07349,0.34644 -0.11548,0.71387 -0.11548,1.0813c0,0.36743 0.04199,0.73486 0.11548,1.0813c0.49341,2.44604 2.6665,4.2937 5.25952,4.2937c2.59302,0 4.76611,-1.84766 5.25952,-4.2937c0.07349,-0.34643 0.11548,-0.71387 0.11548,-1.0813c0,-0.36743 -0.04199,-0.73486 -0.11548,-1.0813c-0.49341,-2.44604 -2.6665,-4.2937 -5.25952,-4.2937zM24.1875,16.125h32.35498c-1.77417,2.32007 -2.79248,5.18604 -2.79248,8.16748v2.58252h-16.125c-2.96045,0 -5.375,2.41455 -5.375,5.375v112.875c0,2.96045 2.41455,5.375 5.375,5.375h75.71191c2.1521,0 4.17822,-0.83984 5.70044,-2.36206l18.35059,-18.35059c1.52222,-1.52222 2.36206,-3.54834 2.36206,-5.70044v-91.83691c0,-2.96045 -2.41455,-5.375 -5.375,-5.375h-16.125v-2.58252c0,-2.98145 -1.01831,-5.84741 -2.79248,-8.16748h32.35498c1.48022,0 2.6875,1.20728 2.6875,2.6875v139.75c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-123.625c-1.48022,0 -2.6875,-1.20728 -2.6875,-2.6875v-139.75c0,-1.48022 1.20728,-2.6875 2.6875,-2.6875zM37.625,32.25h16.61841c1.11279,3.11792 4.07324,5.375 7.56909,5.375h48.375c3.49585,0 6.4563,-2.25708 7.56909,-5.375h16.61841v91.375h-16.125c-2.96045,0 -5.375,2.41455 -5.375,5.375v16.125h-75.25zM45.6875,43c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875v5.375c0,1.48022 1.20728,2.6875 2.6875,2.6875c1.48022,0 2.6875,-1.20728 2.6875,-2.6875v-5.375c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM59.125,43c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875v5.375c0,1.48022 1.20728,2.6875 2.6875,2.6875c1.48022,0 2.6875,-1.20728 2.6875,-2.6875v-5.375c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM72.5625,43c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875v5.375c0,1.48022 1.20728,2.6875 2.6875,2.6875c1.48022,0 2.6875,-1.20728 2.6875,-2.6875v-5.375c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM86,43c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875v5.375c0,1.48022 1.20728,2.6875 2.6875,2.6875c1.48022,0 2.6875,-1.20728 2.6875,-2.6875v-5.375c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM99.4375,43c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875v5.375c0,1.48022 1.20728,2.6875 2.6875,2.6875c1.48022,0 2.6875,-1.20728 2.6875,-2.6875v-5.375c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM112.875,43c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875v5.375c0,1.48022 1.20728,2.6875 2.6875,2.6875c1.48022,0 2.6875,-1.20728 2.6875,-2.6875v-5.375c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM126.3125,43c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875v5.375c0,1.48022 1.20728,2.6875 2.6875,2.6875c1.48022,0 2.6875,-1.20728 2.6875,-2.6875v-5.375c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM53.75,69.875c-2.96045,0 -5.375,2.41455 -5.375,5.375v5.375c0,2.96045 2.41455,5.375 5.375,5.375h5.375c2.96045,0 5.375,-2.41455 5.375,-5.375v-5.375c0,-2.96045 -2.41455,-5.375 -5.375,-5.375zM72.5625,69.875c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.20728,2.6875 2.6875,2.6875h26.875c1.48022,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM110.1875,69.875c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.20728,2.6875 2.6875,2.6875h10.75c1.48022,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM52.74219,74.24219h7.39063v7.39063h-7.39062zM72.5625,80.625c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.20728,2.6875 2.6875,2.6875h32.25c1.48022,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM61.8125,96.75c-0.68237,0 -1.37524,0.26245 -1.90015,0.78735l-6.16235,6.16235l-0.78735,-0.78735c-1.0498,-1.0498 -2.75049,-1.0498 -3.80029,0c-1.0498,1.0498 -1.0498,2.75049 0,3.80029l2.6875,2.6875c0.5249,0.5249 1.20728,0.78735 1.90015,0.78735c0.69287,0 1.37524,-0.26245 1.90015,-0.78735l8.0625,-8.0625c1.0498,-1.0498 1.0498,-2.75049 0,-3.80029c-0.5249,-0.5249 -1.21777,-0.78735 -1.90015,-0.78735zM72.5625,96.75c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.20728,2.6875 2.6875,2.6875h43c1.48022,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM72.5625,107.5c-1.48022,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.20728,2.6875 2.6875,2.6875h32.25c1.48022,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.20728,-2.6875 -2.6875,-2.6875zM118.25,129h12.32471l-12.32471,12.32471z"></path></g><path d="" fill="none"></path></g></g></svg>
+                            </div>
+                            <div class="col-12 text-center text-white pl-0" style="margin-top: -20px;">
+                                <h5 class="font-weight-bold" style="font-size: 12px;">Test/Exam</h5>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
+                                5
                             </span>
-                        </button>
-                        </button>
-                        <div class="dropdown-menu col-12 p-2 border-0 panel" style="height: auto;" aria-labelledby="dropdownMenuButton">
-                            <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Mathematics</span>
-                            <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Physics</span>
-                            <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Biology</span>
-                            <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Chemistry</span>
-                            <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">English</span>
-                            <span class=" d-inline-block mr-1 mr-lg-3 mt-md-1 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 10px;height: auto;width:90px">Geography</span>
-                        </div>
-                    </div>
-                    <div class="col-12 p-2 mt-3 row" style="height:auto;">
-                        <div class="col-lg-4 col-md-6 col-12 border p-2" style="height: 180px;">
-                            <div class="col-12 row rounded p-0" style="height: 100%;background-color: #F66462;">
-                                <div class="col-10"></div>
-                                <div class="col-2">
-                                    <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
-                                        5
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 border col-12 p-2" style="height: 180px;">
-                            <div class="col-12 row rounded p-0" style="height: 100%;background-color: #C53E3D">
-                                <div class="col-10"></div>
-                                <div class="col-2">
-                                    <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
-                                        3
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
-                            <div class="col-12 row rounded p-0" style="height: 100%;background-color: #783030">
-                                <div class="col-10"></div>
-                                <div class="col-2">
-                                    <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
-                                        2
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
-                            <div class="col-12 row rounded p-0" style="height: 100%;background-color: #85B4E7">
-                                <div class="col-10"></div>
-                                <div class="col-2">
-                                    <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
-                                        0
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
-                            <div class="col-12 row rounded p-0" style="height: 100%;background-color: #4177B0">
-                                <div class="col-10"></div>
-                                <div class="col-2">
-                                    <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
-                                        6
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
-                            <div class="col-12 row rounded p-0" style="height: 100%;background-color: #1E436B">
-                                <div class="col-10"></div>
-                                <div class="col-2">
-                                    <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
-                                        1
-                                    </span>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 py-2 px-0 border" style="height:auto;">
-                    <div class="container-fluid bg-white col-12 panel ml-0 d-flex align-items-center" style="height:40px;">
-                        <h5 class="" style="font-weight: 600;">My Calender</h5>
+
+
+                <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
+                    <div class="col-12 row rounded p-0" style="height: 100%;background-color: #C53E3D">
+                        <div class="col-9">
+                            <div class="col-12 p-4 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="96" height="96"
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;">
+                                    <g transform="">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#c53e3d"></path><path d="" fill="none"></path><path d="" fill="none"></path><g fill="#ffffff"><path d="M86,3.44c-7.56531,0 -13.76,6.19469 -13.76,13.76v3.44h-30.96c-5.65719,0 -10.32,4.66281 -10.32,10.32v127.28c0,5.65719 4.66281,10.32 10.32,10.32h89.44c5.65719,0 10.32,-4.66281 10.32,-10.32v-127.28c0,-5.65719 -4.66281,-10.32 -10.32,-10.32h-30.96v-3.44c0,-7.56531 -6.19469,-13.76 -13.76,-13.76zM86,10.32c3.84313,0 6.88,3.03688 6.88,6.88v6.30219c-0.06719,0.37625 -0.06719,0.7525 0,1.11531v6.3425h-13.76v-6.30219c0.06719,-0.37625 0.06719,-0.7525 0,-1.11531v-6.3425c0,-3.84312 3.03688,-6.88 6.88,-6.88zM86,13.76c-1.89469,0 -3.44,1.54531 -3.44,3.44c0,1.89469 1.54531,3.44 3.44,3.44c1.89469,0 3.44,-1.54531 3.44,-3.44c0,-1.89469 -1.54531,-3.44 -3.44,-3.44zM41.28,27.52h30.96v6.88c0,1.89469 1.54531,3.44 3.44,3.44h20.64c1.89469,0 3.44,-1.54531 3.44,-3.44v-6.88h30.96c1.94844,0 3.44,1.49156 3.44,3.44v127.28c0,1.94844 -1.49156,3.44 -3.44,3.44h-89.44c-1.94844,0 -3.44,-1.49156 -3.44,-3.44v-127.28c0,-1.94844 1.49156,-3.44 3.44,-3.44zM114.52781,73.24781l-38.84781,38.84781l-18.20781,-18.20781l-4.86437,4.86437l23.07219,23.07219l43.71219,-43.71219z"></path></g></g></g></svg>
+                            </div>
+                            <div class="col-12 text-center text-white pl-0" style="margin-top: -20px;">
+                                <h5 class="font-weight-bold" style="font-size: 12px;">Assignment</h5>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
+                                3
+                            </span>
+                        </div>
                     </div>
-                    <div class="container-fluid row mt-4" style="height: auto;">
-                        <div class="col-lg-2 border col-md-2 col-12">
-                          <h5 class="ml-4 mt-4 date">Thursday</h5>
-                          <h5 class="ml-4 date">March 2</h5>
-                        </div>
-                        <div class="col-lg-5 col-md-6 border col-12 bg-white rounded d-inline-flex">
-                          <div class="calendar">
-                            <div class="calendar-header" style="display: none;">
-                                <span class="month-picker" id="month-picker">February</span>
-                                <div class="year-picker">
-                                    <span class="year-change" id="prev-year">
-                                        <pre><</pre>
-                                    </span>
-                                    <span id="year">2021</span>
-                                    <span class="year-change" id="next-year">
-                                        <pre>></pre>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="calendar-body">
-                                <div class="calendar-week-day">
-                                    <div>Sun</div>
-                                    <div>Mon</div>
-                                    <div>Tue</div>
-                                    <div>Wed</div>
-                                    <div>Thu</div>
-                                    <div>Fri</div>
-                                    <div>Sat</div>
-                                </div>
-                                <div class="calendar-days"></div>
-                            </div>
-                            <div class="month-list"></div>
-                        </div>
-                        </div>
-                        <div class="col-lg-5 col-md-3 border col-12 pt-4 pl-5 px-0">
-                          <p class="font-weight-bold">Calender Details</p>
-                          <div class="col-lg-10 col-sm-11 border p-0 bg-white rounded " style="height: 150px;">
-                            <ul class="list-group font-weight-light responde">
-                              <li class="list-group-item border-0 pt-2 pb-1">Mathematics quiz Competition</li>
-                              <li class="list-group-item border-0 pt-1 pb-1">Weekly Students Debate</li>
-                              <li class="list-group-item border-0 pt-1 pb-1">Past Question Solving</li>
-                              <li class="list-group-item border-0 pt-1 pb-1">Weekly Students Debate</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
                 </div>
+
+                <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
+                    <div class="col-12 row rounded p-0" style="height: 100%;background-color: #783030">
+                        <div class="col-9">
+                            <div class="col-12 p-4 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                width="96" height="96"
+                                viewBox="0 0 172 172"
+                                style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#783030"></path><g fill="#ffffff"><path d="M52.82617,5.375c-3.59033,0 -6.9707,1.39624 -9.50073,3.93677l-23.26367,23.26367c-2.54053,2.54053 -3.93677,5.9104 -3.93677,9.50073v94.98633c0,4.44067 3.62183,8.0625 8.0625,8.0625h13.4375v8.0625c0,4.44067 3.62183,8.0625 8.0625,8.0625h102.125c4.44067,0 8.0625,-3.62183 8.0625,-8.0625v-123.625c0,-4.44067 -3.62183,-8.0625 -8.0625,-8.0625h-13.4375v-8.0625c0,-4.44067 -3.62183,-8.0625 -8.0625,-8.0625zM53.75,10.75h72.5625c1.48022,0 2.6875,1.20728 2.6875,2.6875v104.8125c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875v8.0625c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-102.125c-1.48022,0 -2.6875,-1.20728 -2.6875,-2.6875v-8.0625c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875v-75.25h24.1875c4.44067,0 8.0625,-3.62183 8.0625,-8.0625zM48.375,12.09375v22.84375c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-22.84375c0.30444,-0.45142 0.64038,-0.87134 1.01831,-1.24927l23.26367,-23.26367c0.38843,-0.38843 0.80835,-0.72436 1.24927,-1.01831zM134.375,26.875h13.4375c1.48022,0 2.6875,1.20728 2.6875,2.6875v123.625c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-102.125c-1.48022,0 -2.6875,-1.20728 -2.6875,-2.6875v-8.0625h83.3125c4.44067,0 8.0625,-3.62183 8.0625,-8.0625zM45.6875,53.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h37.625c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM94.0625,53.75c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h10.75c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM45.6875,64.5c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h48.375c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM45.6875,80.625c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h53.75c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM45.6875,91.375c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875c0,1.49072 1.19678,2.6875 2.6875,2.6875h26.875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM34.9375,118.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM48.375,118.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM61.8125,118.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM75.25,118.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM88.6875,118.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM102.125,118.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875zM115.5625,118.25c-1.49072,0 -2.6875,1.19678 -2.6875,2.6875v5.375c0,1.49072 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.19678 2.6875,-2.6875v-5.375c0,-1.49072 -1.19678,-2.6875 -2.6875,-2.6875z"></path></g><path d="" fill="none"></path></g></g></svg>
+                            </div>
+                            <div class="col-12 pl-0 text-center text-white" style="margin-top: -20px;">
+                                <h5 class="font-weight-bold" style="font-size: 12px;">Documents/videos</h5>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
+                                3
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
+                    <div class="col-12 row rounded p-0" style="height: 100%;background-color: #85B4E7">
+                        <div class="col-9">
+                            <div class="col-12 p-4 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="100" height="100"
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;">
+                                <g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#85b4e7"></path><g fill="#ffffff"><path d="M86,10.75c-13.56381,0 -24.1875,10.62369 -24.1875,24.1875c0,8.47344 2.7428,17.4445 7.27515,24.18225h-1.90015c-12.38131,0 -24.70564,5.55892 -32.16077,14.5083c-0.08063,0.09406 -0.15327,0.19963 -0.22046,0.30445l-18.18262,29.31055c-6.31294,7.76956 -4.84808,20.96183 3.12842,27.79883c0.11287,0.09944 0.23843,0.18183 0.36743,0.26245l21.56824,12.93884l0.8031,8.81836c0.42462,4.6655 3.88734,8.18848 8.57165,8.18848h69.10339c4.68431,0 8.91864,-3.52042 9.34326,-8.18323l1.00781,-11.07019l21.18506,-10.59253c0.16931,-0.08331 0.32985,-0.18619 0.47766,-0.30444c4.00706,-3.20619 6.62435,-8.19352 7.18066,-13.68945c0.53213,-5.25944 -0.92538,-10.41767 -3.99451,-14.18286l-18.72327,-29.42077c-0.06181,-0.09675 -0.12946,-0.18682 -0.20471,-0.2782c-7.51694,-9.01925 -19.33812,-14.40857 -31.62537,-14.40857h-1.90015c4.53235,-6.73775 7.27515,-15.70881 7.27515,-24.18225c0,-13.56381 -10.62369,-24.1875 -24.1875,-24.1875zM86,16.125c10.54844,0 18.8125,8.26138 18.8125,18.8125c0,13.38913 -8.39038,29.5625 -18.8125,29.5625c-10.42212,0 -18.8125,-16.17337 -18.8125,-29.5625c0,-10.55112 8.26406,-18.8125 18.8125,-18.8125zM98.36145,64.49475h6.45105c10.65056,0 20.87759,4.61377 27.3894,12.3457l18.71802,29.41553c0.06181,0.09675 0.12946,0.18951 0.20471,0.2782c2.22794,2.67406 3.27934,6.43845 2.88696,10.33533c-0.40044,3.96675 -2.2132,7.54629 -4.98132,9.86292l-9.28027,4.64014v-10.44031c0,-3.94521 -2.85462,-7.21993 -6.60327,-7.91028l0.58789,-6.46155c0.23112,-2.51013 -0.61632,-5.01647 -2.31482,-6.87622c-1.70119,-1.86513 -4.11914,-2.9342 -6.64001,-2.9342h-77.55957c-2.52087,0 -4.94408,1.06652 -6.64526,2.92896c-1.6985,1.86244 -2.54326,4.36866 -2.31482,6.88147l0.58789,6.46155c-3.74629,0.69032 -6.59802,3.96745 -6.59802,7.91028v10.7605c0,0.22901 0.04941,0.44238 0.06824,0.66663l-9.23303,-5.54297c-5.67331,-5.02831 -6.76246,-14.82123 -2.20984,-20.28223c0.08063,-0.09675 0.15327,-0.19963 0.22046,-0.30444l18.17737,-29.2948c6.47419,-7.67281 17.15087,-12.43494 27.91431,-12.43494h6.4563c3.57234,3.3151 7.76377,5.375 12.3562,5.375c4.59475,0 8.78795,-2.06218 12.36145,-5.38025zM47.22021,102.125h77.55432c1.02931,0 1.98363,0.42047 2.677,1.18103c0.69338,0.75787 1.02045,1.7423 0.92908,2.76624l-0.61939,6.80273h-6.82373c-7.40944,0 -13.4375,6.02281 -13.4375,13.43225c0,7.40944 6.02806,13.44275 13.4375,13.44275h4.38293l-1.16528,12.82861c-0.16931,1.87856 -2.10263,3.29639 -3.98926,3.29639h-69.10339c-1.88394,0 -3.04565,-1.41514 -3.21765,-3.29639l-1.16528,-12.82861h4.38293c7.40675,0 13.4375,-6.03331 13.4375,-13.44275c0,-7.40944 -6.02806,-13.43225 -13.4375,-13.43225h-6.82898l-0.61938,-6.80273c-0.09406,-1.02394 0.23301,-2.01092 0.92908,-2.77148c0.69606,-0.75787 1.64769,-1.17578 2.677,-1.17578zM40.30725,118.25h10.75525c4.44512,0 8.0625,3.61213 8.0625,8.05725c0,4.44513 -3.61738,8.06775 -8.0625,8.06775h-10.75525c-1.48081,0 -2.68225,-1.20144 -2.68225,-2.68225v-10.7605c0,-1.48081 1.20144,-2.68225 2.68225,-2.68225zM120.9375,118.25h10.75c1.48081,0 2.6875,1.19875 2.6875,2.68225v10.75c0,1.4835 -1.20669,2.69275 -2.6875,2.69275h-10.75c-4.44513,0 -8.0625,-3.61737 -8.0625,-8.0625c0,-4.44513 3.61737,-8.0625 8.0625,-8.0625zM99.39551,139.71326c-1.4822,0.02317 -2.66581,1.242 -2.64551,2.72424v5.375c-0.01371,0.96921 0.49551,1.87072 1.33266,2.35932c0.83715,0.4886 1.87253,0.4886 2.70968,0c0.83715,-0.4886 1.34637,-1.39011 1.33266,-2.35932v-5.375c0.00995,-0.72643 -0.2746,-1.42595 -0.78881,-1.93917c-0.51421,-0.51322 -1.21427,-0.79642 -1.94068,-0.78507zM59.125,139.75c-1.4835,0 -2.6875,1.20131 -2.6875,2.6875v5.375c0,1.48619 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.20131 2.6875,-2.6875v-5.375c0,-1.48619 -1.204,-2.6875 -2.6875,-2.6875zM72.5625,139.75c-1.4835,0 -2.6875,1.20131 -2.6875,2.6875v5.375c0,1.48619 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.20131 2.6875,-2.6875v-5.375c0,-1.48619 -1.204,-2.6875 -2.6875,-2.6875zM86,139.75c-1.4835,0 -2.6875,1.20131 -2.6875,2.6875v5.375c0,1.48619 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.20131 2.6875,-2.6875v-5.375c0,-1.48619 -1.204,-2.6875 -2.6875,-2.6875zM112.875,139.75525c-1.4835,0 -2.6875,1.20131 -2.6875,2.6875v5.36975c0,1.48619 1.204,2.6875 2.6875,2.6875c1.4835,0 2.6875,-1.20131 2.6875,-2.6875v-5.36975c0,-1.48619 -1.204,-2.6875 -2.6875,-2.6875z"></path></g><path d="" fill="none"></path><path d="" fill="none"></path></g></g></svg>
+                            </div>
+                            <div class="col-12 text-center text-white pl-0" style="margin-top: -20px;">
+                                <h5 class="font-weight-bold" style="font-size: 12px;">Virtual Class</h5>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
+                                3
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
+                    <div class="col-12 row rounded p-0" style="height: 100%;background-color: #4177B0">
+                        <div class="col-9">
+                            <div class="col-12 p-4 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="100" height="100"
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;">
+                                <g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#4177b0"></path><g fill="#ffffff"><path d="M26.875,5.375c-5.9314,0 -10.75,4.8186 -10.75,10.75v112.875c0,5.9314 4.8186,10.75 10.75,10.75h10.75v21.5c0,5.9314 4.8186,10.75 10.75,10.75h88.6875c4.44067,0 8.0625,-3.62183 8.0625,-8.0625v-8.55591c3.11792,-1.11279 5.375,-4.07324 5.375,-7.56909v-102.125c0,-4.44067 -3.62183,-8.0625 -8.0625,-8.0625h-13.4375v-24.1875c0,-4.44067 -3.62183,-8.0625 -8.0625,-8.0625zM26.875,10.75h94.0625c1.48022,0 2.6875,1.20728 2.6875,2.6875v102.125c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-72.5625v-77.9375c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875v77.9375h-16.125c-1.65869,0 -3.60083,0.59839 -5.375,1.70068v-103.82568c0,-2.96045 2.41455,-5.375 5.375,-5.375zM29.5625,13.4375c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h5.375c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM45.6875,16.125c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875v10.75c0,1.48022 1.19678,2.6875 2.6875,2.6875c1.49072,0 2.6875,-1.20728 2.6875,-2.6875v-10.75c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM29.5625,26.875c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h5.375c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM29.5625,40.3125c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h5.375c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM129,43h13.4375c1.48022,0 2.6875,1.20728 2.6875,2.6875v102.125c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-94.0625c-1.65869,0 -3.60083,0.59839 -5.375,1.70068v-12.45068h72.5625c4.44067,0 8.0625,-3.62183 8.0625,-8.0625v-8.55591c3.11792,-1.11279 5.375,-4.07324 5.375,-7.56909zM29.5625,53.75c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h5.375c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM64.5,53.75c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h16.125c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM91.375,53.75c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h10.75c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM75.25,64.5c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h16.125c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM29.5625,67.1875c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h5.375c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM29.5625,80.625c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h5.375c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM29.5625,94.0625c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h5.375c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM29.5625,107.5c-1.49072,0 -2.6875,1.20728 -2.6875,2.6875c0,1.48022 1.19678,2.6875 2.6875,2.6875h5.375c1.49072,0 2.6875,-1.20728 2.6875,-2.6875c0,-1.48022 -1.19678,-2.6875 -2.6875,-2.6875zM26.875,123.625h91.375v8.0625c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-88.6875c-2.96045,0 -5.375,-2.41455 -5.375,-5.375c0,-3.34888 3.7373,-5.375 5.375,-5.375zM48.375,155.875h91.375v8.0625c0,1.48022 -1.20728,2.6875 -2.6875,2.6875h-88.6875c-2.96045,0 -5.375,-2.41455 -5.375,-5.375c0,-3.34888 3.7373,-5.375 5.375,-5.375z"></path></g><path d="" fill="none"></path></g></g></svg>
+                            </div>
+                            <div class="col-12 text-center text-white pl-0" style="margin-top: -20px;">
+                                <h5 class="font-weight-bold" style="font-size: 12px;">E-library</h5>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
+                                6
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 col-12 p-2" style="height: 180px;">
+                    <div class="col-12 row rounded p-0" style="height: 100%;background-color: #1E436B">
+                        <div class="col-9">
+                            <div class="col-12 p-4 d-flex justify-content-center align-items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                    width="100" height="100"
+                                    viewBox="0 0 172 172"
+                                    style=" fill:#000000;">
+                                <g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#1e436b"></path><g fill="#ffffff"><path d="M24.08,6.88v158.24h3.44h120.4v-158.24zM30.96,13.76h110.08v144.48h-110.08zM82.56,30.96v14.68719l-12.71187,-7.34359l-3.44,5.95281l12.71859,7.3436l-12.71859,7.3436l3.44,5.95281l12.71187,-7.34359v14.68719h6.88v-14.68719l12.71187,7.34359l3.44,-5.95281l-12.71859,-7.3436l12.71859,-7.3436l-3.44,-5.95281l-12.71187,7.34359v-14.68719zM48.16,89.44v6.88h75.68v-6.88zM48.16,110.08v6.88h75.68v-6.88zM48.16,130.72v6.88h13.76h10.32h17.2v-6.88h-17.2h-10.32z"></path></g><path d="" fill="none"></path></g></g></svg>
+                            </div>
+                            <div class="col-12 text-center text-white" style="margin-top: -20px;">
+                                <h5 class="font-weight-bold" style="font-size: 12px;">Reports</h5>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <span class="mx-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
+                                6
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-        <div class="col-3 pt-4 px-0 pl-1">
-            <div class="col-12 d-flex p-0 border">
-                <h5 class="font-weight-bold" style="font-size: 15px;">Messages</h5>
-                <ion-icon name="chatbox-ellipses" style="font-size: 18px;">1</ion-icon>
-            </div>
-            <div class="col-12 row py-1 border">
-                <div class="col-2">
-                    <span class="mx-auto my-auto mt-1 rounded-circle bg-white border text-muted font-weight-bold float-right text-white d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;">
-                        1
+            <!--end-->
+            <!--section4-->
+                <div class="col-12 py-5 px-3" style="height:auto;">
+                <div class="bg-white col-12 panel ml-0 d-flex justify-content-between py-2" style="height:48px;">
+                    <h5 class="" style="font-weight: 600;">My Calender</h5>
+                    <span id="calendar-show" role="button" class="btn rounded-circle panel home text-white ml-2 d-flex justify-content-center align-items-center p-2" style="width:30px;height:30px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="18" height="18"
+                            viewBox="0 0 172 172"
+                            style=" fill:#000000;">
+                        <g transform="translate(1.462,1.462) scale(0.983,0.983)"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="butt" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g fill="#ffffff" stroke="#cccccc" stroke-width="3" stroke-linejoin="round"><path d="M50.16667,0v28.66667h-14.33333v-28.66667zM136.16667,0v28.66667h-14.33333v-28.66667zM28.66667,21.5v14.33333h28.66667v-14.33333h57.33333v14.33333h28.66667v-14.33333h21.5c3.94726,0 7.16667,3.2194 7.16667,7.16667v21.5c0,3.94726 -3.2194,7.16667 -7.16667,7.16667v114.66667h-157.66667v-114.66667c-3.94726,0 -7.16667,-3.2194 -7.16667,-7.16667v-21.5c0,-3.94726 3.2194,-7.16667 7.16667,-7.16667zM21.5,157.66667h129v-100.33333h-129zM50.16667,71.66667v14.33333h-14.33333v-14.33333zM78.83333,71.66667v14.33333h-14.33333v-14.33333zM107.5,71.66667v14.33333h-14.33333v-14.33333zM136.16667,71.66667v14.33333h-14.33333v-14.33333zM50.16667,100.33333v14.33333h-14.33333v-14.33333zM78.83333,100.33333v14.33333h-14.33333v-14.33333zM107.5,100.33333v14.33333h-14.33333v-14.33333zM136.16667,100.33333v14.33333h-14.33333v-14.33333zM50.16667,129v14.33333h-14.33333v-14.33333zM78.83333,129v14.33333h-14.33333v-14.33333zM107.5,129v14.33333h-14.33333v-14.33333zM136.16667,129v14.33333h-14.33333v-14.33333z"></path></g><path d="M0,172v-172h172v172z" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path><g fill="#ffffff" stroke="none" stroke-width="1" stroke-linejoin="miter"><path d="M35.83333,0v28.66667h14.33333v-28.66667zM121.83333,0v28.66667h14.33333v-28.66667zM7.16667,21.5c-3.94726,0 -7.16667,3.2194 -7.16667,7.16667v21.5c0,3.94726 3.2194,7.16667 7.16667,7.16667v114.66667h157.66667v-114.66667c3.94726,0 7.16667,-3.2194 7.16667,-7.16667v-21.5c0,-3.94726 -3.2194,-7.16667 -7.16667,-7.16667h-21.5v14.33333h-28.66667v-14.33333h-57.33333v14.33333h-28.66667v-14.33333zM21.5,57.33333h129v100.33333h-129zM35.83333,71.66667v14.33333h14.33333v-14.33333zM64.5,71.66667v14.33333h14.33333v-14.33333zM93.16667,71.66667v14.33333h14.33333v-14.33333zM121.83333,71.66667v14.33333h14.33333v-14.33333zM35.83333,100.33333v14.33333h14.33333v-14.33333zM64.5,100.33333v14.33333h14.33333v-14.33333zM93.16667,100.33333v14.33333h14.33333v-14.33333zM121.83333,100.33333v14.33333h14.33333v-14.33333zM35.83333,129v14.33333h14.33333v-14.33333zM64.5,129v14.33333h14.33333v-14.33333zM93.16667,129v14.33333h14.33333v-14.33333zM121.83333,129v14.33333h14.33333v-14.33333z"></path></g><path d="" fill="none" stroke="none" stroke-width="1" stroke-linejoin="miter"></path></g></g></svg>
                     </span>
                 </div>
-                <div class="col-9"></div>
+                <div class="row mx-auto" style="height: auto;margin-top: 20px;">
+                    <div class="col-4">
+                        <div class="border-white mt-0 mt-lg-5" style="height: 90px;width: 60%;">
+                            <h5 class="date font-weight-normal" style="font-size: 21px;">Thursday</h5>
+                            <h5 class="date font-weight-normal">March 2</h5>
+                        </div>
+                    </div>
+                    <div class="col-8 mx-0">
+                      <p class="font-weight-bold ml-3">Calender Details</p>
+                      <div class="col-lg-9 col-sm-11 panel ml-3 p-0 bg-white rounded " style="height: 150px;">
+                        <ul class="list-group list-group-flush p-3 font-weight-light responde">
+                          <li class="list-group-item pt-2 ml-0 pb-1">Mathematics quiz Competition</li>
+                          <li class="list-group-item pt-1 ml-0 pb-1">Weekly Students Debate</li>
+                          <li class="list-group-item pt-1 ml-0 pb-1">Past Question Solving</li>
+                          <li class="list-group-item pt-1 ml-0 pb-1">Weekly Students Debate</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!--end-->
+        </div>
+
+
+        <div class="bg-white col-12 col-lg-4 p-0 pl-1 d-none" id="message-panel">
+            <div class="col-lg-12 ml-1 text-white row sticky-top px-3" style="background-color: #D1EAC1;" id="locate">
+                <div class="col-lg-5 d-flex justify-content-between p-0">
+                    <h5 class="font-weight-bold mt-2 text-muted" style="font-size: 18px;">Messages</h5>
+                    <div class="float-right mb-2 rounded-circle p-1 d-flex align-items-center" style="width: 33px;height: 33px;">
+                        <ion-icon name="chatbubble-ellipses"></ion-icon>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <span role="button" class="btn float-right" id="close-messagePanel">
+                        <i>x</i>
+                    </span>
+                </div>
+            </div>
+              
+              <div class="col-12 row py-1 mt-1 mx-auto" style="height: 90px;">
+                <div class="col-2 col-md-1 col-lg-3 p-0">
+                    <span class="rounded-circle panel bg-white text-muted font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                </div>
+                <div class="col-10 col-md-11 col-lg-9 px-0">
+                    <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+                    <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+                        Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+                    </p>
+                </div>
+              </div>
+              <div class="col-12 row py-1 mt-1 mx-auto bg-light" style="height: 90px;">
+                <div class="col-2 col-md-1 col-lg-3 p-0">
+                    <span class="rounded-circle panel bg-white text-dark font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                </div>
+                <div class="col-10 col-md-11 col-lg-9 px-0">
+                    <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+                    <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+                        Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+                    </p>
+                </div>
+              </div>
+              <div class="col-12 row py-1 mt-1 mx-auto" style="height: 90px;">
+                <div class="col-2 col-md-1 col-lg-3 p-0">
+                    <span class="rounded-circle panel bg-white text-muted font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                </div>
+                <div class="col-10 col-md-11 col-lg-9 px-0">
+                    <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+                    <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+                        Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+                    </p>
+                </div>
+              </div>
+              <div class="col-12 row py-1 mt-1 mx-auto bg-light" style="height: 90px;">
+                <div class="col-2 col-md-1 col-lg-3 p-0">
+                    <span class="rounded-circle panel bg-white text-dark font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                </div>
+                <div class="col-10 col-md-11 col-lg-9 px-0">
+                    <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+                    <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+                        Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+                    </p>
+                </div>
             </div>
         </div>
+
+
+
+
+        <div class="bg-white col-12 col-lg-4 p-4 pl-1" id="info-panel">
+            <div class="col-lg-6 d-flex justify-content-between px-3">
+                <h5 class="font-weight-bold text-muted mt-2" style="font-size: 18px;">Annoucement</h5>
+                <div class="float-right mb-2 rounded-circle p-1 d-flex align-items-center" style="width: 33px;height: 33px;">
+                    <ion-icon name="megaphone"></ion-icon>
+                </div>
+            </div>
+            <div class="col-9 px-4 mt-3">
+                <div class="rounded border bg-light panel  p-0 mt-2" style="width:120%;height:50px;"> 
+                    <div class="col-12 row" style="height: 100%;">
+                        <div class="panel-design-2"></div>
+                        <div class="col-10">
+                            <h3 class="font-weight-bold" style="font-size: 15px;">English</h3>
+                            <h6 class="font-weight-nbold" style="font-size: 12px;">Lexis and structure</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded border bg-light panel p-0 mt-2" style="width:120%;height:50px;"> 
+                    <div class="col-12 row" style="height: 100%;">
+                        <div class="panel-design-2"></div>
+                        <div class="col-10" style="line-height: 80%;">
+                            <h3 class="font-weight-bold" style="font-size: 15px;">Chemistry</h3>
+                            <h6 class="font-weight-nbold" style="font-size: 12px;">Atomic Structure</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded border bg-light panel p-0 mt-2" style="width:120%;height:50px;"> 
+                    <div class="col-lg-12 col-12 row" style="height: 100%;">
+                        <div class="panel-design-2"></div>
+                        <div class="col-10">
+                          <h3 class="font-weight-bold" style="font-size: 15px;">Biology</h3>
+                          <h6 class="font-weight-bold" style="font-size: 12px;">Ecosystem</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 d-flex mt-5 justify-content-between px-3">
+                <h5 class="font-weight-bold mt-2 text-muted" style="font-size: 18px;">Polls</h5>
+                <div class="float-right mb-2 rounded-circle p-1 d-flex align-items-center" style="width: 33px;height: 33px;">
+                    <ion-icon name="podium"></ion-icon>
+                </div>
+            </div>
+            <div class="col-9 ml-3 py-2" style="height: auto;background-color: #F3F2F2">
+                <p class="mt-2">
+                    Which cinema do you visit the most
+                </p>
+                <div class="progress bg-white position-relative py-auto mt-2 panel" style="height: 36px;">
+                    <div class="progress" role="progressbar" style="width: 14%;height: 100%;background-color: #FFA19F;" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="justify-content-between d-flex p-1 position-absolute w-100" style="height: 100%;">
+                      <span class="rounded-circle text-muted font-weight-bold float-right my-auto d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;margin-right: 0;border: 1.5px solid #505050;">
+                      </span>
+              
+                      <h6 class="font-weight-bold my-auto">
+                        Silverbird
+                      </h6>
+              
+                      <p class="font-weight-normal my-auto">
+                        14%
+                      </p>
+                    </div>
+                </div>
+
+                <div class="progress bg-white position-relative py-auto mt-2 panel" style="height: 36px;">
+                    <div class="progress" role="progressbar" style="width: 60%;height: 100%;background-color: #FFA19F;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="justify-content-between d-flex p-1 position-absolute w-100" style="height: 100%;">
+                      <span class="rounded-circle text-muted font-weight-bold float-right my-auto d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;margin-right: 0;border: 1.5px solid #505050;">
+                      </span>
+              
+                      <h6 class="font-weight-bold my-auto">
+                        Silverbird
+                      </h6>
+              
+                      <p class="font-weight-normal my-auto">
+                        60%
+                      </p>
+                    </div>
+                </div>
+
+                <div class="progress bg-white position-relative py-auto mt-2 panel" style="height: 36px;">
+                    <div class="progress" role="progressbar" style="width: 32%;height: 100%;background-color: #FFA19F;" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="justify-content-between d-flex p-1 position-absolute w-100" style="height: 100%;">
+                      <span class="rounded-circle text-muted font-weight-bold float-right my-auto d-flex justify-content-center align-items-center p-1" style="width:24px;height:24px;margin-right: 0;border: 1.5px solid #505050;">
+                      </span>
+              
+                      <h6 class="font-weight-bold my-auto">
+                        Silverbird
+                      </h6>
+              
+                      <p class="font-weight-normal my-auto">
+                        32%
+                      </p>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="col-lg-6 d-flex mt-5 justify-content-between px-3">
+                <h5 class="font-weight-bold mt-2 text-muted" style="font-size: 18px;">Messages</h5>
+                <div class="float-right mb-2 rounded-circle p-1 d-flex align-items-center" style="width: 33px;height: 33px;">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                </div>
+            </div>
+
+            <div class="col-12 row py-1 mt-1 mx-auto" style="height: 90px;">
+                <div class="col-2 col-md-1 col-lg-3 p-0">
+                    <span class="rounded-circle panel bg-white text-muted font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                </div>
+                <div class="col-10 col-md-11 col-lg-9 px-0">
+                    <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+                    <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+                        Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 row py-1 mt-1 mx-auto bg-light" style="height: 90px;">
+                <div class="col-2 col-md-1 col-lg-3 p-0">
+                    <span class="rounded-circle panel bg-white text-dark font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                </div>
+                <div class="col-10 col-md-11 col-lg-9 px-0">
+                    <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+                    <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+                        Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 row py-1 mt-1 mx-auto" style="height: 90px;">
+                <div class="col-2 col-md-1 col-lg-3 p-0">
+                    <span class="rounded-circle panel bg-white text-muted font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                </div>
+                <div class="col-10 col-md-11 col-lg-9 px-0">
+                    <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+                    <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+                        Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 row py-1 mt-1 mx-auto bg-light" style="height: 90px;">
+                <div class="col-2 col-md-1 col-lg-3 p-0">
+                    <span class="rounded-circle panel bg-white text-dark font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+                        <ion-icon name="person"></ion-icon>
+                    </span>
+                </div>
+                <div class="col-10 col-md-11 col-lg-9 px-0">
+                    <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+                    <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+                        Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+                    </p>
+                </div>
+            </div>
+            <button style="font-size: 13px;" type="button" class="btn font-weight-bold bg-dark float-right text-white pt-1 mt-3" id="click">
+                View all
+            </button>
+        </div>
+
+
+        
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</div>
+    <div class="modal" id="calendar-renderer" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">  Calendar</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <span class="month-picker" id="month-picker">February</span>
+                        <div class="year-picker">
+                            <span class="year-change" id="prev-year">
+                                <pre><</pre>
+                            </span>
+                            <span id="year">2021</span>
+                            <span class="year-change" id="next-year">
+                                <pre>></pre>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="calendar-week-day">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="calendar-days"></div>
+                    </div>
+                    <!--div class="calendar-footer">
+                        <div class="toggle">
+                            <span>Dark Mode</span>
+                            <div class="dark-mode-switch">
+                                <div class="dark-mode-switch-ident"></div>
+                            </div>
+                        </div>
+                    </div-->
+                    <div class="month-list"></div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
     <script src="calender/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+       // $(document).ready(() => {
+            AOS.init({
+                once: true,
+            });
+            
+            $("#calendar-show").click(() => {
+                $("#calendar-renderer").modal("show");
+            })
+
+            document.querySelector("#click").addEventListener('click', () => {
+                let ele1 = $("#info-panel");
+                let ele2 = $("#message-panel");
+                document.querySelector("#info-panel").classList.add("d-none")
+                ele1.fadeOut();
+                if(document.querySelector("#message-panel").hasAttribute("data-aos")){
+                    document.querySelector("#message-panel").setAttribute("data-aos","flip-up")
+                    document.querySelector("#message-panel").classList.remove("d-none")
+                    ele2.show()
+                }else{
+                    document.querySelector("#message-panel").setAttribute("data-aos","flip-up");
+                    document.querySelector("#message-panel").classList.remove("d-none")
+                    ele2.show()
+                }
+                    //document.querySelector("#message-panel").classList.remove("d-none")
+                    //$("#ele2").show()
+                    if(ele2.is(":visible")){
+                        $(window).scrollTop(0);
+                        //document.querySelector("#info-panel").removeAttribute("data-aos");
+                    }
+                    AOS.init()
+            })
+
+            document.querySelector("#close-messagePanel").addEventListener("click",() => {
+                let ele1 = $("#info-panel");
+                let ele2 = $("#message-panel");
+                document.querySelector("#message-panel").classList.add("d-none")
+                ele2.fadeOut();
+                /*if(document.querySelector("#message-panel").hasAttribute("data-aos")){
+                    document.querySelector("#message-panel").removeAttribute("data-aos");
+                }*/
+                if(document.querySelector("#info-panel").hasAttribute("data-aos")){
+                    document.querySelector("#info-panel").setAttribute("data-aos","flip-up")
+                    document.querySelector("#info-panel").classList.remove("d-none")
+                    ele1.show();
+                }else{
+                    document.querySelector("#info-panel").setAttribute("data-aos","flip-up");
+                document.querySelector("#info-panel").classList.remove("d-none")
+                ele1.show();
+                }
+                //document.querySelector("#info-panel").setAttribute("data-aos","flip-left");
+                //document.querySelector("#info-panel").classList.remove("d-none")
+                //ele1.show();
+                if(ele1.is(":visible")){
+                    $(window).scrollTop(0);
+                    document.querySelector("#message-panel").removeAttribute("data-aos");
+                }
+                AOS.init()
+            })
+        //})
+    </script>
 </body>
 </html>

@@ -242,7 +242,7 @@
         </div>
       </div>
       <!--end of info section-->
-      <div class="col-12 py-5 px-3" style="height:auto; margin-top: -390px;">
+      <div class="col-12 py-5 px-3 border" style="height:auto; margin-top: -360px;">
         <div class="bg-white col-12 panel ml-0 d-flex justify-content-between py-2" style="height:48px;">
             <h5 class="" style="font-weight: 600;">My Calender</h5>
             <span id="calendar-show" role="button" class="btn rounded-circle panel home text-white ml-2 d-flex justify-content-center align-items-center p-2" style="width:30px;height:30px;">
@@ -254,16 +254,16 @@
             </span>
         </div>
         <div class="row mx-auto" style="height: auto;margin-top: 20px;">
-            <div class="col-lg-4 col-12">
+            <div class="col-4">
                 <div class="border-white mt-0 mt-lg-5" style="height: 90px;width: 60%;">
                     <h5 class="date font-weight-normal" style="font-size: 21px;">Thursday</h5>
                     <h5 class="date font-weight-normal">March 2</h5>
                 </div>
             </div>
-            <div class="col-lg-8 col-12 mx-0">
-              <p class="font-weight-bold ml-lg-3 ml-1">Calender Details</p>
-              <div class="col-lg-8 col-12 panel ml-lg- ml-1 p-0 bg-white rounded " style="height: 150px;">
-                <ul class="list-group list-group-flush p-1 font-weight-light responde">
+            <div class="col-8 mx-0">
+              <p class="font-weight-bold ml-3">Calender Details</p>
+              <div class="col-lg-9 col-sm-11 panel ml-3 p-0 bg-white rounded " style="height: 150px;">
+                <ul class="list-group list-group-flush p-3 font-weight-light responde">
                   <li class="list-group-item pt-2 ml-0 pb-1">Mathematics quiz Competition</li>
                   <li class="list-group-item pt-1 ml-0 pb-1">Weekly Students Debate</li>
                   <li class="list-group-item pt-1 ml-0 pb-1">Past Question Solving</li>
@@ -275,65 +275,10 @@
     </div>
     </div>
   </div>
-
-
-  <div class="modal" id="calendar-renderer" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">  Calendar</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-            <div class="calendar">
-                <div class="calendar-header">
-                    <span class="month-picker" id="month-picker">February</span>
-                    <div class="year-picker">
-                        <span class="year-change" id="prev-year">
-                            <pre><</pre>
-                        </span>
-                        <span id="year">2021</span>
-                        <span class="year-change" id="next-year">
-                            <pre>></pre>
-                        </span>
-                    </div>
-                </div>
-                <div class="calendar-body">
-                    <div class="calendar-week-day">
-                        <div>Sun</div>
-                        <div>Mon</div>
-                        <div>Tue</div>
-                        <div>Wed</div>
-                        <div>Thu</div>
-                        <div>Fri</div>
-                        <div>Sat</div>
-                    </div>
-                    <div class="calendar-days"></div>
-                </div>
-                <!--div class="calendar-footer">
-                    <div class="toggle">
-                        <span>Dark Mode</span>
-                        <div class="dark-mode-switch">
-                            <div class="dark-mode-switch-ident"></div>
-                        </div>
-                    </div>
-                </div-->
-                <div class="month-list"></div>
-            </div>
-        </div>
-      </div>
-    </div>
 </body>
     <script src="https://raw.githubusercontent.com/WickyNilliams/enquire.js/master/dist/enquire.min.js"></script>
     <script src="calender/app.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>
-      $("#calendar-show").click(() => {
-                $("#calendar-renderer").modal("show");
-      })
-    </script>
 </html>

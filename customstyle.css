@@ -24,10 +24,19 @@ body{
   .calendar-title{
     margin-top: 200px;
   }
+  .listen{
+    display: none;
+  }
+  .expand{
+    display: block;
+  }
 }
 @media screen and (min-width: 601px) {
   li h6,.responde{
     font-size: 15px;
+  }
+  .listen{
+    display: block;
   }
   .calendar-title{
     margin-top: 12rem;
@@ -70,14 +79,14 @@ body{
 }
 .panel-design{
   background-color: #1E436B;
-  width:9px;
+  width:4px;
   height: 100%;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 .panel-design-2{
   background-color: #32BDA6;
-  width:9px;
+  width:4px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -86,7 +95,7 @@ body{
 }
 .panel-design-3 {
   background-color: #F76462;
-  width:9px;
+  width:4px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
@@ -154,10 +163,10 @@ body{
   .border-md-right:after {
     content: " ";
     position: absolute;
-    border-left: 1px #6c757d solid;
-    top: 9%;
+    border-left: 4px white solid;
+    top: 6%;
     right: 0;
-    height: 80%;
+    height: 90%;
     margin-top: auto;
     margin-bottom: auto;
   }
@@ -206,15 +215,15 @@ body{
     border-top: 1px solid #e3e7eb !important;
   }
   .border-lg-right {
-    position: relative;
+    position: relative !important;
   }
   .border-lg-right:after {
     content: " ";
     position: absolute;
-    border-left: 2px white solid;
-    top: 9%;
+    border-left: 3px white solid;
+    top: 6%;
     right: 0;
-    height: 80%;
+    height: 90%;
     margin-top: auto;
     margin-bottom: auto;
   }

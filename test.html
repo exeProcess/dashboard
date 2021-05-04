@@ -1,37 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AOS - Animate on scroll library</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
-    <div class="progress position-relative" style="height: 45px;">
-        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-            <div class="rounded-circle border" style="height: 30px;width: 30px;"></div>
-        </div>
-        <small class="justify-content-center d-flex my-auto w-100">60% complete</small>
+  </head>
+  <body>
+    <div class="col-6 border bg-light h-100 p-5" style="height: 40%;" id="first">
+      <button id="click" class="btn button-success float-right">
+        click me
+      </button>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <div class="col-6 border d-none bg-dark p-5"  style="height: 40%;" id="second">
+      <button id="click" class="btn button-dark float-right">
+        click me back
+      </button>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      var itemsCounter = 1;
+      var container = document.getElementById('aos-demo');
+
+      $("#click").click(() => {
+        let ele1 = $("#first");
+        let ele2 = $("#second");
+        ele1.fadeOut();
+        document.querySelector("#second").setAttribute("data-aos","flip-left");
+        document.querySelector("#second").classList.remove("d-none")
+        $("#ele2").fadeIn()
+        AOS.init()
+      })
+    </script>
+  </body>
 </html>
 
 
+<div class="col-lg-6 d-flex mt-5 justify-content-between px-3">
+  <h5 class="font-weight-bold mt-2 text-muted" style="font-size: 18px;">Messages</h5>
+  <div class="float-right mb-2 rounded-circle p-1 d-flex align-items-center" style="width: 33px;height: 33px;">
+      <ion-icon name="chatbubble-ellipses"></ion-icon>
+  </div>
+</div>
 
-<button class="btn btn-secondarycol-12 mx-auto px-1" style="height: auto;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width: 100%;height: 40px;">
-    <ion-icon name="caret-down-outline"></ion-icon>
-</button>
-<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
-    <div class="col-12 mx-auto px-1" style="height: auto;">
-        <span class=" d-inline-block mr-3 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 8px;">Mathematics</span>
-        <span class=" d-inline-block mr-3 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 9px;height: auto;">Physics</span>
-        <span class=" d-inline-block mr-3 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 9px;height: auto;">Biology</span>
-        <span class=" d-inline-block mr-3 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 9px;height: auto;">Chemistry</span>
-        <span class=" d-inline-block mr-3 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 9px;height: auto;">English</span>
-        <span class=" d-inline-block mr-3 bg-white px-0 font-weight-bold page-title panel border p-1 rounded mt-1 mt-lg-0 mt-md-0" style="font-size: 9px;height: auto;">Geography</span>
-    </div>
+<div class="col-12 row py-1 mt-1 mx-auto" style="height: 90px;">
+  <div class="col-2 col-md-1 col-lg-3 p-0">
+      <span class="rounded-circle panel bg-white text-muted font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+          <ion-icon name="person"></ion-icon>
+      </span>
+  </div>
+  <div class="col-10 col-md-11 col-lg-9 px-0">
+      <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+      <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+          Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+      </p>
+  </div>
+</div>
+<div class="col-12 row py-1 mt-1 mx-auto bg-light" style="height: 90px;">
+  <div class="col-2 col-md-1 col-lg-3 p-0">
+      <span class="rounded-circle panel bg-white text-dark font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+          <ion-icon name="person"></ion-icon>
+      </span>
+  </div>
+  <div class="col-10 col-md-11 col-lg-9 px-0">
+      <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+      <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+          Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+      </p>
+  </div>
+</div>
+<div class="col-12 row py-1 mt-1 mx-auto" style="height: 90px;">
+  <div class="col-2 col-md-1 col-lg-3 p-0">
+      <span class="rounded-circle panel bg-white text-muted font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+          <ion-icon name="person"></ion-icon>
+      </span>
+  </div>
+  <div class="col-10 col-md-11 col-lg-9 px-0">
+      <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+      <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+          Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+      </p>
+  </div>
+</div>
+<div class="col-12 row py-1 mt-1 mx-auto bg-light" style="height: 90px;">
+  <div class="col-2 col-md-1 col-lg-3 p-0">
+      <span class="rounded-circle panel bg-white text-dark font-weight-bold mt-3 mx-auto text-white d-flex justify-content-center align-items-center p-1" style="width:45px;height:45px;">
+          <ion-icon name="person"></ion-icon>
+      </span>
+  </div>
+  <div class="col-10 col-md-11 col-lg-9 px-0">
+      <h5 class="font-weight-bold mt-md-3 mt-lg-0 mt-0" style="font-size: 14px;">Mr Adebomi</h5>
+      <p class="font-weight-normal pt-0 mt-md-3 mt-lg-0 mt-0" style="font-size: 12px;line-height: 114%;">
+          Your end-to-end online platform for k12,higher education and workplace training.The most used open source LMS in the world
+      </p>
+  </div>
 </div>

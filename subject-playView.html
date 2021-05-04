@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Ahome">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Aassignment">
+    <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%3Acampaign">
+    <link rel="stylesheet" href="customstyle.css">
+    <link rel="stylesheet" href="calender/app.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+         body{
+             overflow-y: auto;
+             padding: 0;
+             scroll-behavior: smooth;
+         }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="col-12 col-md-9 col-lg-6 mx-auto">
+        <div class="row d-flex mx-auto col-12 p-0" style="height: 45px;">
+            <div class="col-7 col-lg-7 col-md-6 py-2">
+                <h5 class="font-weight-bold page-title" style="font-size: 18px;">Subject play view</h5>
+            </div>
+            <div class="col-5 col-lg-5 col-md-6 px-0">
+                <div class="col-12 col-md-7 pl-md-2 pl-lg-2 pl-2 d-flex justify-content-center col-lg-4 float-right py-1" style="height: 100%;">
+                    <span class="rounded-circle home ml-4 d-flex justify-content-center align-items-center p-1" style="width:27px;height:27px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="16" height="16"
+                            viewBox="0 0 172 172"
+                            style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#256363"></path><g fill="#ffffff"><path d="M86,14.19336l-78.90332,73.23438l7.30665,7.89453l7.09668,-6.59278v61.77051h53.75v-53.75h21.5v53.75h53.75v-61.77051l7.09668,6.59278l7.30665,-7.89453zM86,28.80665l53.75,49.9707v60.97266h-32.25v-53.75h-43v53.75h-32.25v-60.97266z"></path></g></g></g></svg>
+                    </span>
+                    <span class="rounded-circle home text-white ml-2 d-flex justify-content-center align-items-center p-1" style="width:27px;height:27px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                            width="16" height="16"
+                            viewBox="0 0 172 172"
+                            style=" fill:#000000;"><g transform=""><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="#256363"></path><g fill="#ffffff"><path d="M43,21.5c-11.78928,0 -21.5,9.71072 -21.5,21.5v86c0,11.78928 9.71072,21.5 21.5,21.5h60.91667c9.94739,0 18.80196,-6.51986 21.27604,-16.132c0.98565,-3.83435 -1.32369,-7.74173 -5.15804,-8.72738c-3.83435,-0.98565 -7.74173,1.32369 -8.72738,5.15804c-0.70792,2.75036 -3.97935,5.368 -7.39062,5.368h-60.91667c-4.04189,0 -7.16667,-3.12478 -7.16667,-7.16667v-86c0,-4.04189 3.12478,-7.16667 7.16667,-7.16667h60.91667c3.41127,0 6.68271,2.61764 7.39063,5.368c0.98565,3.83435 4.89302,6.14369 8.72738,5.15804c3.83435,-0.98565 6.14369,-4.89302 5.15804,-8.72738c-2.47408,-9.61214 -11.32865,-16.132 -21.27604,-16.132zM121.75635,57.26335c-2.91501,0.00361 -5.53745,1.7723 -6.63303,4.47359c-1.09558,2.70129 -0.44601,5.79702 1.64296,7.83012l9.26627,9.26628h-65.11589c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h65.11589l-9.26627,9.26628c-1.87223,1.79752 -2.62641,4.46675 -1.97168,6.97825c0.65472,2.5115 2.61605,4.47282 5.12755,5.12755c2.5115,0.65472 5.18073,-0.09946 6.97825,-1.97168l21.5,-21.5c2.79764,-2.7988 2.79764,-7.33531 0,-10.13411l-21.5,-21.5c-1.35097,-1.38873 -3.2066,-2.17137 -5.14404,-2.1696z"></path></g><path d="" fill="none"></path></g></g></svg>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 bg-light p-0" style="height: 300px;">
+            <div class="col-5 border-bottom">
+                <h5 class="font-weight-normal page-title ml-3" style="font-size: 12px;">What is Ecosystem</h5>
+            </div>
+            <div class="col-12 bg-dark border" style="height: 450px;background-image: url('eco.jpg');background-repeat: no-repeat;background-size: cover;">
+                
+            </div>
+        </div>
+
+        <div class="col-12 bg-light p-0 mt-4" style="height: 300px;">
+            <h5 class="font-weight-bold page-title" style="font-size: 18px;">Transcript</h5>
+            <div class="col-12 bg-dark" style="height: 300px;"></div>
+            <div class="col-12 mt-4">
+                <ion-icon class="float-right mr-0" style="height: 27px; width: 54px;" name="chatbox-ellipses"></ion-icon>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
